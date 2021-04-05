@@ -1,15 +1,19 @@
 class Lista {
     protected int[] array;
+
+    // n eh o contador ()
     private int n;
 
     Lista() {
         this(6);
-    };
+    }
+
     Lista(int tamanho) {
         this.array = new int[tamanho];
         this.n =0;
     }
     public void inserirPosicao (int elemento, int posicao) throws Exception {
+        // Verifica se tem espaco || verifica se a posicao eh neggativa || verifica se a insercao foi no buraco
         if ( n>= array.length || posicao < 0 || posicao > n ) {
             throw new Exception("Erro : Lista cheia!");
         }
@@ -22,6 +26,7 @@ class Lista {
     }
     public void inserir (int elemento) throws Exception {
         /*
+            Insere no inicio
             Insere elemento no comeco do array
         */
 

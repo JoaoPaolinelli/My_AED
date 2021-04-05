@@ -1,0 +1,9 @@
+Utilizando os metodos da lista, fazemos uma pilha
+
+Temos dois casos
+
+O melhor, usando IF e RF.
+
+- Muito eficiente, pois insere em n e faz n++
+- Remove n e faz n--;
+
