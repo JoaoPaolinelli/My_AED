@@ -1,3 +1,3 @@
 # Estoque
  Trabalho interdisciplinar
-~ NÃO PUBLICAS OS ARQUIVOS DO TRABALHO SEM A PERMISSÃO DOS MEMBROS! ~
+Projeto desenvolvido por João Paolinelli, Danniel Vieira, Marcos Gomes e Felipe Tadeu
