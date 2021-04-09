@@ -97,7 +97,15 @@ class Fila {
         Fila fila = new Fila(6);
         MyIO.println("\t\t\t # Fila Circular #");
         MyIO.println("\t\t\t # First In, First Out #");
-
+        fila.inserir(1);
+        fila.inserir(3);
+        fila.inserir(4);
+        fila.inserir(5);
+        fila.inserir(6);
+        fila.inserir(5);
+        fila.imprimir();
+        fila.remover();
+        fila.imprimir();
         MyIO.println("--------------------------------------------");
         String xxt = "        Essa eh minha senha hahaha         ";
         
