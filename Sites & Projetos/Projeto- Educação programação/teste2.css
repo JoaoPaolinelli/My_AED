@@ -1,0 +1,62 @@
+.Conteudo{
+    background-color: rgba(118, 169, 218, 0.123);
+}
+.conteudoMenu{
+    margin-top: 11%;
+}
+.conteudoForm{
+    margin-top: 10.5%;
+
+    
+    
+}
+.imgtop{
+    width: 100%;
+    
+}
+.logoMenu img{
+    
+    margin-top: 2%;
+}
+.indiceMenu{
+    margin-top: 1%;
+    padding-left: 1%;
+    font-size: 90%;
+}
+.indiceMenu .navegadorMenu{
+    margin-left: 2%;
+    padding-left: 14%;
+    width: 76%;
+    margin-top: 1%;
+    height: 100%;
+   background: rgba(245, 243, 243, 0.836);
+}
+.logologo img{
+    padding-right: 10%;
+   
+}
+.topico1{
+    margin-top: 5%;
+}
+.conteudoTopico{
+    
+    margin-left: 1%;
+    width: 94%;
+
+}
+.conteudoTopico article h2{
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.conteudoTopico article h5{
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.conteudoTopico article  p{
+    font-weight: 400;
+    font-size: 105%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}  
+.linguagens{
+    block-size: 20%;
+}
