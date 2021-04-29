@@ -1,0 +1,32 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+
+
+header .menu-top .navbar-brand {
+    color: var(--vermelho);
+    align-items: center;
+    justify-content: center;
+}
+header .menu-top .menu-right li a {
+    color:#ffff;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.painel-principal .foto {
+    background: linear-gradient(rgba(17, 15, 15, 0.5), rgba(0,0,0,.50) 100%), url('img/Catch-me-if-you-can2.jpg');
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    
+}
+
+.painel .container-fluid {
+    background:url('/img/O-espiao.jpg');
+    height: 500px;
+}

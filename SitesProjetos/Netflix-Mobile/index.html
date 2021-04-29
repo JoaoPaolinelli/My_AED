@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="net.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix Brasil</title>
+    
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="responsividade.css">
+    
+</head>
+<body>
+    <!-- <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Serie</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentarios</a>
+            </nav>
+        </div>
+    </header> -->
+    
+    <main>
+        <div class="filmes-em-alta">
+
+            <!--Estamos utilizando essa classe como wrapper-->
+            <div class="container">
+
+                <h3 class="titulo">Prenda-me Se For Capaz</h3>
+                
+                <p class="descricao">Frank Abagnale Jr. já foi médico, advogado e co-piloto, tudo isso com apenas 18 anos. Mestre na arte do disfarce, ele aproveita suas habilidades com muita astucia.</p>
+                <div class="botoes">
+                    <!--Por padrao, ao ter uma div que nao eh filha direita do pai 'filmes-em-alta' ela recebe um padrao block-->
+                    <button role ="button" class="botao"><i class="fas fa-play"></i>ASSISTIR AGORA</button>
+                    <button role ="button" class="botao"><i class="fas fa-info"></i>MAIS INFORMACOES</button>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+
+    </main>
+
+    <div class="carrosel-filme">
+        <div class="owl-theme   owl-carousel">
+            <div class="item">
+                <img class ="box-filme"src="img/Carga-explosiva-3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class ="box-filme" src="img/MK-a-vinganca-de-scorpion.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class ="box-filme" src="img/Na-mira-do-perigo.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class ="box-filme" src="img/Transformer-ciege.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class ="box-filme" src="img/MortalKombat.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c56b50def0.js" crossorigin="anonymous"></script>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/net.js"></script>
+    
+    
+</body>
+</html>

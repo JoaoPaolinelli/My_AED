@@ -1,0 +1,152 @@
+/*Defini uma variavel no css.
+Eh uma boa pratica declarar cores/valores que serao utilizados
+no site dentro das variaveis */
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+    /*O border-box serve para manter o tamanho
+    que o programador definiu para caixa*/
+    box-sizing: border-box;
+}
+/*Elementos base */
+body {
+    background: var(--preta);
+    /*Definindo fontes padrao
+    Google fonts(pode ser implementado)*/
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+    
+}
+header .container {
+
+    /*Vamos utilizar o flexbox e por padrao
+    tem como declarado o flex-direction: row; */
+   display: flex;
+
+   /*Alinha elementos no centro da row na vertical*/
+   align-items: center;
+
+    /*O justify-content: ; define os elementos na row
+    na horizontal */
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 3px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 30px;
+}
+header nav a {
+    /*Remove a linha embaixo dos links */
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*Filmes em alta*/
+
+.filmes-em-alta {
+    font-size: 16px;
+    
+    background:linear-gradient(rgba(17, 15, 15, 0.5), rgba(0,0,0,.50) 100%), url('img/Catch-me-if-you-can2.jpg');
+    
+    
+    background-repeat: no-repeat;
+    background-color: #141414;
+    
+
+    /*Definindo tamanho da box */
+    height: 500px;
+
+    margin: 0.5%;
+    border-bottom: 2px solid rgb(26, 25, 25);
+    
+    /*Definindo que imagem ocupe o espaco correto da box */
+    /* background-size: cover; */
+    
+    background-size: cover;
+    
+    /* Quem herda as box sao os filhos */
+    display: flex;
+    /*Agora queremos normalizar o espaco de maneira horizontal
+    nosso justify content segue esse formado (Direita e esquerda)*/
+    flex-direction: column;
+    justify-content: center;
+
+    /*Agora quero que meus elementos comecem da esquerda.*/
+    align-items: flex-start;
+    padding-right: 300px;
+    
+}
+
+.filmes-em-alta .descricao {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.filmes-em-alta .titulo {
+    /*Recomendado trabalhar com posicionamento fluido = %
+    O % faz o calculo automaticamente, assim mantem a porcentagem
+    mais adequada a outras plataformas  */
+    
+    margin-top: 28%;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 50%);
+    border: none;
+    color:white;
+
+    /*Padding lida com o espaco interno do elemento
+    Primeiro valor: Cima e baixo
+    Segundo valor: Esquerda e direita*/
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    /*UX Design - recomandado */
+    cursor: pointer;
+
+    /*Defini uma transicao para o elemento*/
+    transition: .3s ease all;
+}
+.botao:hover {
+    background-color: white;
+    color: var(--preta);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+/* Truques das classes Wrappers(Envelopamento) */
+
+.filmes-em-alta .container {
+    width: auto;
+}
+/* Configurando nosso carrousel */
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrolsel-filme{
+    margin-top: 5px ;
+}
