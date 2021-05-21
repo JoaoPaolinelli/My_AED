@@ -1,0 +1,51 @@
+static void levelOrder(Node root){
+    Node[] allRoots = getHeight(root);
+    
+    if(root == null){
+        return;
+    }
+    
+    int numElementosOUT = 0; int ultimo = allRoots.lenght-1;
+    
+    
+    while(numElementosOUT != ultimo) {
+        System.out.print(allRoots.data + " ");
+        numElementosOUT++;
+    }           
+}
+
+public static Node[] getHeight(Node root){
+        
+    Integer leftAltura = 0;
+    Integer rightAltura = 0;
+    int ultimo = 0;
+    Node[] ArrayOfRoots = new Node[55];
+    if(root == null) {
+        return 0;
+    }else{
+        ArrayOfRoots[ultimo] = root;
+        ultimo++;
+    }
+    
+    if(root.left != null) {
+        ArrayOfRoots[ultimo] = root.left;
+        ultimo++;
+        leftAltura = getHeight(root.left) + 1;
+    }
+    
+    if(root.right != null) {
+        ArrayOfRoots[ultimo] = root.left;
+        ultimo++;
+        rightAltura = getHeight(root.right) + 1;
+    }
+    Node[] novoRoot = new Node[ultimo];
+    for(int i = 0; i < ultimo; i++) {
+        novoRoot[i] = ArraysOfRoots[i];
+    }
+    
+    if(leftAltura > rightAltura) {
+        return novoRoot;
+    }else{
+        return novoRoot;
+    }
+}
